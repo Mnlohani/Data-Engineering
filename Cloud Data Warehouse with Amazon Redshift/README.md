@@ -57,8 +57,7 @@ We choose the star schema for our data modeling of Analytics tables in Redshift 
  - **sort key for songs table** is choosen as auto since their might be aggregations where compound keys which work better but in some case compound keys also fails (as per AWS docs). So we best choose AUTO to leave this decison on Redshift.
  - **sort key for artists table** is choosen as artist_id since it will work in agggregations and in cases without aggrgations. Year could be used but
  
-- Other tables:
- - Their size is rather small, so we implemented them with "ALL distribution style".
+- Other tables: Their size is rather small, so we implemented them with "ALL distribution style".
 - We also compare results of simple analytics table with no distribution style with the above data model with few sample queries. We find most of the queries run in lower time with our above data model as compared to previous one. Please find the comparison in the last section of `setup_and_analysis.ipynb`.
 
 
