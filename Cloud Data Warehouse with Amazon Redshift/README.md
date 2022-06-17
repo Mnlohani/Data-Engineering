@@ -42,7 +42,7 @@ and it looks like
 
 ## Procedure:
 We have implemented the complete code for Amazon redshift cluster creation, connection and its usage for database creation in this project. For that we have made `dwh_init.cfg` file from which the program reads  the cluster computation node type, their numbers and cluster type. 
-After creating Redshift cluster, we use the Cluster role end point and ARN( DWH_ENDPOINT and DWH_ROLE_ARN variable in `setup_and_analysis.ipynb` file) to add into `dwh.cfg` for DWH_CLUSTER_IDENTIFIER and ARN parameters respectively `dwh.cfg` is used in ETL piplines for staging and analytics part. 
+After creating Redshift cluster, we use the Cluster role end point and ARN( DWH_ENDPOINT and DWH_ROLE_ARN variable in setup_and_analysis.ipynb file) to add into `dwh.cfg` for DWH_CLUSTER_IDENTIFIER and ARN parameters respectively. `dwh.cfg` is used in ETL piplines for staging and analytics part. 
 Other steps are shown in the below figure.
 ![Image](./images/procedure.png)
 
